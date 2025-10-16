@@ -1,7 +1,7 @@
 services:
 postgres:
 build: . #Construir contenedor usando Dockerfile presente en el directorio actual (.)
-container_name: ContDBpractMod3 # Nombre del contenedor
+container_name: PracticaMod3 # Nombre del contenedor
 ports:
 - "5432:5432" # Puerto para conectar desde tu máquina host al contenedor
 environment:
