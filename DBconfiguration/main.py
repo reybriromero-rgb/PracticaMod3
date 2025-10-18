@@ -57,7 +57,7 @@ def actualizar(cursor, conexion):
 
 def eliminar(cursor, conexion):
     id_usuario = input("ID del usuario a eliminar: ")
-    cursor.execute("DELETE FROM usuarios WHERE id_usuario = %s;", (id_usuario,))
+    cursor.execute("DELETE FROM usuarios WHERE id_usuario = %s;", (id_usuario))
     conexion.commit()
     print("Usuario eliminado correctamente.")
 
